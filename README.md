@@ -25,3 +25,9 @@ verify the container:
 docker ps
 docker container ls -a
 ```
+
+cleanup the container:
+```
+docker container rm <ContainerName> --force
+docker container rm hello-world-app --force
+```
