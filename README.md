@@ -5,7 +5,7 @@ Docker examples
 docker
 aws cli
 lightsailctl plugin - install this using brew ( https://brew.sh/ )
-brew install aws/tap/lightsailctl
+`brew install aws/tap/lightsailctl`
 
 
 For hello world container:
