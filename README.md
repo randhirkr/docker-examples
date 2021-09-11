@@ -4,7 +4,8 @@ Docker examples
 ###Pre-requisites:
 docker
 aws cli
-lightsailctl plugin - install this using brew ( https://brew.sh/ ) /n
+lightsailctl plugin - install this using brew ( https://brew.sh/ ) 
+
 `brew install aws/tap/lightsailctl`
 
 
