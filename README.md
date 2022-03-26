@@ -2,14 +2,23 @@
 Docker examples
 
 ###Pre-requisites:
-docker
-aws cli
-lightsailctl plugin - install this using brew ( https://brew.sh/ ) 
+* docker
+* aws cli - required only if images are being pushed to aws lightsail service
+* lightsailctl plugin - install this using brew ( https://brew.sh/ ) - required only if images are being pushed to aws lightsail service
 
 `brew install aws/tap/lightsailctl`
 
 
-For hello world container:
+For httpd amazon linux based container, clone the project and run below commands:
+```
+cd httpd-docker-amazon-linux
+docker build -t ran-httpd-app .
+docker tag ran-httpd-app:latest ran-httpd-app:1.0.0
+docker run -t -i -d  -p 80:80 ran-httpd-app
+docker images
+```
+
+For hello world ubuntu based docker container, clone the project and run below commands:
 ```
 cd hello-world-container
 ```
